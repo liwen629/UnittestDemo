@@ -8,7 +8,6 @@ from selenium.webdriver.common.by import By
 
 
 class LoginDemo(unittest.TestCase):
-    driver = webdriver.Chrome()
     selenium_grid_url = "http://127.0.0.1:4444/wd/hub"
     capabilities = DesiredCapabilities.CHROME
     driver = webdriver.Remote(desired_capabilities=capabilities, command_executor=selenium_grid_url)
